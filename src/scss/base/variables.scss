@@ -1,0 +1,108 @@
+//==============================================================================
+// Containers
+//=============================================================================
+
+$x-small: 414px !default;
+$small: 768px !default;
+$medium: 1240px !default;
+$large: 1280px !default;
+$x-large: 1890px !default;
+
+//==============================================================================
+// Breakpoints
+//==============================================================================
+
+$mobile: $x-small !default;
+$tablet: $small !default;
+$tabletLand: $medium !default;
+$desktop: $large !default;
+
+//==============================================================================
+// Global Colors
+//==============================================================================
+
+$background: #ffffff !default;
+$primary-color: #006384 !default;
+$secondary-color: rgba(0,99,132,0.15) !default;
+$accent-color: #075958 !default;
+$alternate-background: #fafafa !default;
+$alternate-color: #10B0CD !default;
+$alternate-color-yellow: #F3B927!default;
+$alternate-color-green: #687F80!default;
+
+$link-color: $alternate-color !default;
+$link-hover-color: darken($link-color, 15%) !default;
+
+$highlight: #ffeea8 !default;
+$error: #d33c40 !default;
+$success: #29de7d !default;
+
+//==============================================================================
+// Typography
+//==============================================================================
+
+// Body
+$font-size: 1rem !default;
+$body-font-size: 1rem !default;
+$font-style: normal !default;
+$font-variant: normal !default;
+$font-weight: normal !default;
+$font-color: #263238 !default;
+$font-family: 'Segoe UI Regular', sans-serif !default;
+$line-height: 1.6 !default;
+
+// Headings
+$heading-font-color: $font-color !default;
+$heading-font-weight: 600 !default;
+$heading-line-height: 1.2 !default;
+
+$h1-large-mobile: 2rem!default;
+$h1-mobile: 1.75rem !default;
+$h2-mobile: 1.5rem !default;
+$h3-mobile: 1.25rem !default;
+$h4-mobile: 1.1rem !default;
+
+$h1-large: 4rem!default;
+$h1: 2.125rem !default;
+$h2: 1.75rem !default;
+$h3: 1.25rem !default;
+$h4: 1rem !default;
+
+//==============================================================================
+// Spacing
+//==============================================================================
+
+$padding: 1rem !default;
+$margin: 1.5rem !default;
+$content-padding: 60px 0 !default;
+$content-padding-mobile: 30px 0 !default;
+
+//==============================================================================
+// Borders
+//==============================================================================
+
+$border-width: 1px !default;
+$border-style: solid !default;
+$border-color: #DFE3E5 !default;
+$borders: $border-width $border-style $border-color !default;
+
+//==============================================================================
+// Buttons
+//==============================================================================
+
+$button-background: $alternate-color !default;
+$button-background-hover: $background !default;
+$button-color: #ffffff !default;
+$button-color-hover: $font-color !default;
+$button-font-weight: 600 !default;
+$button-font-family: $font-family;
+$button-font-size: 1rem !default;
+$button-border-width: 2px !default;
+$button-border-style: solid !default;
+$button-border-color: $button-background !default;
+$button-text-transform: none !default;
+
+// Links
+$link-button-background: transparent !default;
+$accent-button-color: $alternate-color !default;
+$accent-button-color-hover: darken($link-button-background, 10%) !default;
