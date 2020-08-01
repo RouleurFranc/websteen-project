@@ -1,0 +1,14 @@
+.link {
+    display: block;
+    color: $alternate-color;
+
+    &:hover {
+        color: darken($alternate-color, 10%);
+        transition: 0.2s linear;
+    }
+
+    &.link--prev,
+    &.link--next {
+        text-decoration: none;
+    }
+}
