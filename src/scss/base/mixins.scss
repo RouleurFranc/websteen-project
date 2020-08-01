@@ -25,3 +25,13 @@
           @content;
       }
   }
+
+  // Font face mixin
+  @mixin font-face($name, $file, $font-weight) {
+    @font-face {
+        font-family: "#{$name}";
+        font-weight: "#{$font-weight}";
+        src: url("../fonts/#{$file}.woff2") format("woff2");
+        src: url("../fonts/#{$file}.woff") format("woff");
+    }
+ }
