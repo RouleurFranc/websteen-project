@@ -1,0 +1,37 @@
+.color-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-block {
+    width: 56px;
+    height: 56px;
+
+    &.color-block--one {
+        background: $primary-color;
+    }
+
+    &.color-block--two {
+        background: $secondary-color;
+    }
+
+    &.color-block--three {
+        border: $borders;
+    }
+
+    &.color-block--four {
+        background: $alternate-color;
+    }
+
+    &.color-block--five {
+        background: $alternate-color-yellow;
+    }
+
+    &.color-block--six {
+        background: $accent-color;
+    }
+
+    &.color-block--seven {
+        background: $alternate-color-grey;
+    }
+}
