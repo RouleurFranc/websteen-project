@@ -5,9 +5,20 @@
 @import 'base/mixins';
 @import 'base/variables';
 @import 'base/reset';
+@import 'base/typography';
 
-@import 'components/typography';
-@import 'components/layout';
+//==============================================================================
+// Components
+//==============================================================================
+
 @import 'components/buttons';
 @import 'components/content-block';
 @import 'components/color-block';
+@import 'components/banner-block-large';
+
+//==============================================================================
+// Layout
+//==============================================================================
+
+@import 'layout/layout';
+@import 'layout/navigation';

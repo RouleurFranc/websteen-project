@@ -1,0 +1,37 @@
+.banner-block {
+    @include medium-breakpoint {
+        display: flex;
+    }
+
+    .banner-block__image {
+        position: relative;
+
+        .h1-large {
+            position: absolute;
+            top: 4rem;
+            left: 2rem;
+            color: $white;
+
+            @include medium-breakpoint {                
+                max-width: 22rem;
+            }
+        }
+    }
+
+    .banner-block__usp {
+        display: flex;
+        background: $secondary-color;
+        text-align: left;
+        padding: 0 2rem;
+
+        .inner {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        .text-primary {
+            color: $primary-color;
+        }
+    }
+}

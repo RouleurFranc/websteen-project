@@ -2,8 +2,8 @@
 
 .h1-large {
     font-size: $h1-large-mobile;
-    font-family: "Segoe UI Bold", sans-serif;
-
+    font-family: "Segoe UI", sans-serif;
+    font-weight: $heading-font-weight;
     line-height: $heading-line-height;
 
     @include medium-breakpoint {
@@ -44,5 +44,18 @@ h4 {
 
     @include medium-breakpoint {
         font-size: $h4;
+    }
+}
+
+a {
+    color: $font-color;
+    text-decoration: none;
+    
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    &:hover {
+        color: $alternate-color;
     }
 }

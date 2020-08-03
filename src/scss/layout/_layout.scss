@@ -10,6 +10,23 @@ body {
     font-size: $body-font-size;
 }
 
+header.header--main {
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+.logo {
+    width: 132px;
+    height: 46px;
+
+    @include medium-breakpoint {
+        width: 211px;
+        height: 74px;
+    }
+    
+}
+
 .components-container {
     display: flex;
     align-items: center;

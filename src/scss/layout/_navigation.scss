@@ -1,0 +1,28 @@
+.header--main {
+    nav {
+        justify-self: flex-end;
+        margin-left: auto;
+    }
+
+    .bttn--outline {
+        display: none; 
+
+        @include large-breakpoint {
+            margin-left: 2rem;
+            color: $alternate-color;
+            display: inline-block;
+            height: 3rem;
+            line-height: 2.7rem;
+
+            &:hover {
+                background: $alternate-color;
+                color: $background;
+                transition: $transitions;
+            }
+        }
+    }
+}
+
+.back-link {
+    display: block;
+}
