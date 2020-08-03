@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "author": "Frank de Boer",
   "license": "MIT",
-  "description": "A example project for Websteen",
+  "description": "An example project for Websteen",
   "homepage": "",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taniarascia/websteen-project.git"
+    "url": ""
   },
   "scripts": {
     "sass:watch": "node-sass src/scss/ -o dist/css/ -w -r --source-map-embed --source-map-contents --output-style expanded",

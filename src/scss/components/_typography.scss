@@ -4,7 +4,45 @@
     font-size: $h1-large-mobile;
     font-family: "Segoe UI Bold", sans-serif;
 
+    line-height: $heading-line-height;
+
     @include medium-breakpoint {
         font-size: $h1-large;
     } 
+}
+
+h1 {
+    font-size: $h1-mobile;
+    line-height: $heading-line-height;
+
+    @include medium-breakpoint {
+        font-size: $h1;
+    }
+}
+
+h2 {
+    font-size: $h2-mobile;
+    line-height: $heading-line-height;
+
+    @include medium-breakpoint {
+        font-size: $h2;
+    }
+}
+
+h3 {
+    font-size: $h3-mobile;
+    line-height: $heading-line-height;
+
+    @include medium-breakpoint {
+        font-size: $h3;
+    }
+}
+
+h4 {
+    font-size: $h4-mobile;
+    line-height: $heading-line-height;
+
+    @include medium-breakpoint {
+        font-size: $h4;
+    }
 }

@@ -1,3 +1,79 @@
+// Main button styling
+.bttn {
+    -webkit-appearance: none;
+    display: inline-block;
+    border: $button-border-width $button-border-style $button-border-color;
+    background: $button-background;
+    color: $button-color;
+    font-weight: $button-font-weight;
+    font-family: $button-font-family;
+    font-size: $button-font-size;
+    text-transform: $button-text-transform;
+    padding: 0 1.25rem;
+    height: 3.5rem;
+    line-height: 3.2rem;
+    margin: 0 0 0.5rem 0;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: $transitions;
+
+    &:hover {
+        border: $button-border-width $button-border-style $button-border-color;
+        background: $button-background-hover;
+        color: $button-color-hover;
+        text-decoration: none;
+        transition: $transitions;
+    }
+
+    &:focus {
+        border: $button-border-width $button-border-style darken($button-border-color, 10%);
+        background: darken($button-background, 10%);
+        color: $button-color;
+        text-decoration: none;
+    }
+}
+
+.bttn--arrow {
+    &:after {
+        content: "";
+        width: 22px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        background-image: url(/dist/images/arrow-white.svg);
+        margin-left: 1.5rem;
+        transition: $transitions;     
+    }
+
+    &:hover {
+        &:after {
+            background-image: url(/dist/images/arrow-black.svg);
+        }
+    }
+}
+
+.bttn--outline {
+    background: $background;
+    border: $button-border-width $button-border-style $button-border-color;
+    color: $font-color;        
+    transition: $transitions;
+
+    &:after {
+        background-image: url(/dist/images/arrow-black.svg);
+    }
+
+    &:hover {
+        transition: $transitions;
+
+        &:after {
+            margin-left: 2rem;
+        }
+    }
+}
+
+ // Plain link styling 
 .link {
     display: block;
     color: $alternate-color;
@@ -6,9 +82,44 @@
         color: darken($alternate-color, 10%);
         transition: 0.2s linear;
     }
+}
 
-    &.link--prev,
-    &.link--next {
-        text-decoration: none;
+.link--prev,
+.link--next {
+    text-decoration: none;
+    line-height: 24px;
+    margin: 1.5rem 0;
+}
+
+.link--next {
+    &:after {        
+        content: "";
+        width: 22px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        background-image: url(/dist/images/arrow.svg);
+        margin-left: 4rem;
+        transition: 0.2s linear;
+    }
+
+    &:hover {
+        &:after {
+            margin-left: 4.5rem;
+            transition: 0.2s linear;
+        }
+    }
+}
+
+.link--prev {
+    &:before {
+        content: "";
+        width: 22px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        background-image: url(/dist/images/arrow.svg);
+        transform: rotate(180deg);
+        margin-right: 4rem;
     }
 }

@@ -4,7 +4,10 @@
 
 @import 'base/mixins';
 @import 'base/variables';
+@import 'base/reset';
 
 @import 'components/typography';
 @import 'components/layout';
 @import 'components/buttons';
+@import 'components/content-block';
+@import 'components/color-block';
